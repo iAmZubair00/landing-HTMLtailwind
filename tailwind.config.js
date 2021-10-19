@@ -11,9 +11,16 @@ module.exports = {
         grayBG: "#F1F1F1",
         hrLineColor: "#C1C6CD",
       },
-      /* backgroundImage: {
-        "webApp-bg": "url('/images/streetBoy.svg')",
-      }, */
+      backgroundImage: {
+        webAppBg: "url('./images/laptop-curved.png')",
+        hambrgr: "url('./images/icon-hamburger.svg')",
+        close: "url('./images/icon-close.svg')",
+      },
+      screens: {
+        lg1200: "1200px",
+        lg1150: "1150px",
+        md861: "861px",
+      },
     },
   },
   variants: {

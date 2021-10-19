@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,11 +19,17 @@
       class="bg-gradient-to-br from-customYellow via-customGreen to-customBlue"
     >
       <!-- Header  -->
-      <header class="header px-60 py-10 text-white">
-        <div class="flex justify-between">
-          <img src="images/logo-header.svg" alt="" class="w-32" />
+      <header class="header px-48 py-10 text-white">
+        <div class="flex justify-between items-center">
+          <a href=""
+            ><img src="images/logo-header.svg" alt="" class="w-32"
+          /></a>
+          <button
+            class="bg-hambrgr w-8 h-8"
+            onclick="return toggle_menu(event)"
+          ></button>
           <nav>
-            <ul class="flex">
+            <ul class="flex gap-5">
               <li><a href="">Smart Card</a></li>
               <li><a href="">App</a></li>
               <li><a href="">Webapp</a></li>
@@ -42,8 +48,8 @@
         </div>
       </header>
       <!-- Hero Section  -->
-      <section class="hero px-60 py-10 text-white">
-        <div class="flex flex-col sm:flex-row">
+      <section class="hero px-48 py-10 text-white">
+        <div class="flex flex-col lg:flex-row">
           <!-- left col  -->
           <div>
             <p class="text-center">
@@ -67,10 +73,12 @@
     <!-- wrapper around next 2 sections for applying same background -->
     <main class="bg-grayBG">
       <!-- Features Section  -->
-      <section class="features px-60 py-10">
+      <section class="features px-48 py-10">
         <div class="flex flex-col justify-between items-center gap-16">
-          <div class="flex justify-between gap-6">
-            <article class="flex flex-col text-center gap-2">
+          <div
+            class="flex flex-col lg:flex-row justify-between text-center gap-6"
+          >
+            <article class="flex flex-col items-center gap-2">
               <img src="images/support-feature.svg" alt="" class="w-44" />
               <h2 class="text-customGreen">Tracciabilità delle spese</h2>
               <p>
@@ -79,7 +87,7 @@
                 Procedure semplificate a fronte di potenziali controlli fiscali
               </p>
             </article>
-            <article>
+            <article class="flex flex-col items-center gap-2">
               <img src="images/document-feature.svg" alt="" class="w-44" />
               <h2 class="text-customGreen">Semplicità amministrativa</h2>
               <p>
@@ -89,7 +97,7 @@
                 Verifica del pagamento non più necessaria
               </p>
             </article>
-            <article>
+            <article class="flex flex-col items-center gap-2">
               <img src="images/money-feature.svg" alt="" class="w-44" />
               <h2 class="text-customGreen">Controllo delle spese</h2>
               <p>
@@ -101,12 +109,12 @@
           <div>
             <img src="images/laptop-front.png" alt="" />
           </div>
-          <div>
-            <p class="text-3xl font-medium">
+          <div class="flex flex-col lg:flex-row lg:gap-16 gap-4 items-center">
+            <p class="xl:text-3xl lg:text-2xl text-xl font-medium">
               Una semplice gestione della
               <span class="text-customGreen">mobilità aziendale</span>
             </p>
-            <i></i>
+            <img src="images/thunderSign.svg" alt="" class="w-10" />
           </div>
         </div>
       </section>
@@ -140,12 +148,32 @@
       </section>
     </main>
     <!-- Footer  -->
-    <footer class="footer bg-footerBG px-60 py-6">
-      <div class="flex flex-col gap-6">
-        <div class="flex justify-between">
-          <img src="images/logo-footer.svg" alt="" class="w-28" />
+    <footer class="footer bg-footerBG px-48 py-6 text-center">
+      <div class="flex flex-col gap-10">
+        <div
+          class="
+            flex flex-col
+            lg1150:flex-row
+            gap-10
+            md861:gap-5
+            justify-between
+            items-center
+          "
+        >
+          <a href=""
+            ><img src="images/logo-footer.svg" alt="" class="w-28"
+          /></a>
           <nav>
-            <ul class="flex gap-16 text-white font-medium">
+            <ul
+              class="
+                flex flex-col
+                md861:flex-row
+                gap-5
+                lg1150:gap-16
+                text-white
+                font-medium
+              "
+            >
               <li><a href="">Smart Card</a></li>
               <li><a href="">App</a></li>
               <li><a href="">Webapp</a></li>
@@ -154,7 +182,9 @@
             </ul>
           </nav>
         </div>
-        <div class="flex justify-center gap-4">
+        <div
+          class="flex flex-col md861:flex-row justify-center items-center gap-4"
+        >
           <img src="images/applestore.svg" alt="" class="w-28" />
           <img src="images/googleplay.svg" alt="" class="w-28" />
           <div class="flex gap-2">
@@ -164,9 +194,19 @@
           </div>
         </div>
         <hr class="border-none h-0.5 bg-hrLineColor" />
-        <div class="flex justify-between">
+        <div
+          class="
+            flex flex-col
+            lg1150:flex-row
+            gap-5
+            justify-between
+            items-center
+          "
+        >
           <nav>
-            <ul class="flex gap-10 text-gray-200">
+            <ul
+              class="flex flex-col md861:flex-row gap-5 md861:gap-14 text-white"
+            >
               <li><a href="">Company details</a></li>
               <li><a href="">Privacy Policy</a></li>
               <li><a href="">Cookies</a></li>
