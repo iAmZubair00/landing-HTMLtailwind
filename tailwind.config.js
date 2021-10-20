@@ -12,7 +12,7 @@ module.exports = {
         hrLineColor: "#C1C6CD",
       },
       backgroundImage: {
-        webAppBg: "url('./images/laptop-curved.png')",
+        webAppBg: "url('./images/streetBoy.png')",
         hambrgr: "url('./images/icon-hamburger.svg')",
         close: "url('./images/icon-close.svg')",
       },
@@ -20,6 +20,9 @@ module.exports = {
         lg1200: "1200px",
         lg1150: "1150px",
         md861: "861px",
+      },
+      spacing: {
+        "25vw": "25vw",
       },
     },
   },

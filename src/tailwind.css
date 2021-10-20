@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .border-top-gradient {
+    border-top: 30px solid;
+    border-image-source: linear-gradient(
+      to right,
+      #f5e74f,
+      #5db05a 25%,
+      #315ca4 90%
+    );
+    border-image-slice: 1;
+  }
+}

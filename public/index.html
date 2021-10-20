@@ -19,29 +19,40 @@
       class="bg-gradient-to-br from-customYellow via-customGreen to-customBlue"
     >
       <!-- Header  -->
-      <header class="header px-48 py-10 text-white">
+      <header class="header px-48 py-10 text-white font-bold">
         <div class="flex justify-between items-center">
           <a href=""
             ><img src="images/logo-header.svg" alt="" class="w-32"
           /></a>
-          <button
-            class="bg-hambrgr w-8 h-8"
-            onclick="return toggle_menu(event)"
-          ></button>
-          <nav>
-            <ul class="flex gap-5">
+          <button class="bg-hambrgr w-8 h-8 lg1200:hidden"></button>
+          <nav class="hidden lg1200:block">
+            <ul class="flex items-center gap-5">
               <li><a href="">Smart Card</a></li>
               <li><a href="">App</a></li>
-              <li><a href="">Webapp</a></li>
+              <li class="bg-customYellow text-customBlue px-4 py-1 rounded">
+                <a href="">Webapp</a>
+              </li>
               <li><a href="">Mobilita sostenible</a></li>
               <li><a href="">FAQ</a></li>
             </ul>
           </nav>
-          <div>
-            <button class="border-solid border-2 border-white rounded p-2 w-28">
+          <div class="hidden lg1200:block">
+            <button
+              class="
+                border-solid border-2 border-white
+                bg-white
+                text-customBlue
+                rounded
+                px-2
+                py-1
+                w-28
+              "
+            >
               Lorem ipsum
             </button>
-            <button class="border-solid border-2 border-white rounded p-2 w-28">
+            <button
+              class="border-solid border-2 border-white rounded px-2 py-1 w-28"
+            >
               Lorem ipsum
             </button>
           </div>
@@ -71,9 +82,9 @@
     </section>
 
     <!-- wrapper around next 2 sections for applying same background -->
-    <main class="bg-grayBG">
+    <main class="bg-grayBG py-10">
       <!-- Features Section  -->
-      <section class="features px-48 py-10">
+      <section class="features px-48 mb-10">
         <div class="flex flex-col justify-between items-center gap-16">
           <div
             class="flex flex-col lg:flex-row justify-between text-center gap-6"
@@ -119,8 +130,8 @@
         </div>
       </section>
       <!-- webapp Section  -->
-      <section class="webapp">
-        <div class="pl-60 font-medium">
+      <section class="webapp bg-webAppBg bg-no-repeat bg-center">
+        <div class="pl-10 lg:pl-60 font-medium">
           <div class="bg-white w-96 p-14 pr-6 flex flex-col gap-7">
             <div class="text-2xl">
               <h2 class="mb-1">Webapp</h2>
@@ -148,7 +159,9 @@
       </section>
     </main>
     <!-- Footer  -->
-    <footer class="footer bg-footerBG px-48 py-6 text-center">
+    <footer
+      class="footer bg-footerBG px-48 py-6 text-center border-top-gradient"
+    >
       <div class="flex flex-col gap-10">
         <div
           class="
