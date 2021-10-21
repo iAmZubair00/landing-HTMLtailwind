@@ -13,13 +13,35 @@
     />
     <style></style>
   </head>
-  <body>
+  <body class="box-border">
     <!-- wrapper section for 'Header' and 'Hero' to apply same Gradient BG -->
     <section
-      class="bg-gradient-to-br from-customYellow via-customGreen to-customBlue"
+      class="
+        bg-gradient-to-br
+        from-customYellow
+        via-customGreen
+        to-customBlue
+        relative
+        pb-24
+      "
     >
+      <!--  element for applying slanted div  -->
+      <div
+        class="
+          left-0
+          bottom-0
+          absolute
+          border-l-0
+          border-b-0
+          border-r-fullVW
+          border-t-200px
+          border-r-grayBG
+          border-t-transparent
+        "
+      ></div>
+
       <!-- Header  -->
-      <header class="header px-48 py-10 text-white font-bold">
+      <header class="header px-48 py-10 text-white font-bold relative">
         <div class="flex justify-between items-center">
           <a href=""
             ><img src="images/logo-header.svg" alt="" class="w-32"
@@ -59,7 +81,7 @@
         </div>
       </header>
       <!-- Hero Section  -->
-      <section class="hero px-48 py-10 text-white">
+      <section class="hero px-48 py-10 text-white relative">
         <div class="flex flex-col lg:flex-row">
           <!-- left col  -->
           <div>
@@ -82,7 +104,7 @@
     </section>
 
     <!-- wrapper around next 2 sections for applying same background -->
-    <main class="bg-grayBG py-10">
+    <main class="bg-grayBG pb-10">
       <!-- Features Section  -->
       <section class="features px-48 mb-10">
         <div class="flex flex-col justify-between items-center gap-16">
@@ -132,7 +154,23 @@
       <!-- webapp Section  -->
       <section class="webapp bg-webAppBg bg-no-repeat bg-center">
         <div class="pl-10 lg:pl-60 font-medium">
-          <div class="bg-white w-96 p-14 pr-6 flex flex-col gap-7">
+          <div
+            class="
+              bg-white
+              w-96
+              p-14
+              pr-6
+              flex flex-col
+              gap-7
+              relative
+              before:bg-customYellow
+              before:absolute
+              before:w-5
+              before:h-24
+              before:top-14
+              before:left-0
+            "
+          >
             <div class="text-2xl">
               <h2 class="mb-1">Webapp</h2>
               <h1 class="text-customGreen">innovativa</h1>

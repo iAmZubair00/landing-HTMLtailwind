@@ -1,5 +1,6 @@
 module.exports = {
-  purge: [],
+  mode: "jit",
+  purge: ["./public/index.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
@@ -10,6 +11,7 @@ module.exports = {
         customBlue: "#315CA4",
         grayBG: "#F1F1F1",
         hrLineColor: "#C1C6CD",
+        inherit: "inherit",
       },
       backgroundImage: {
         webAppBg: "url('./images/streetBoy.png')",
@@ -23,6 +25,16 @@ module.exports = {
       },
       spacing: {
         "25vw": "25vw",
+      },
+      zIndex: {
+        "-1": "-1",
+      },
+      skew: {
+        "-9": "-9deg",
+      },
+      borderWidth: {
+        fullVW: "100vw",
+        "200px": "200px",
       },
     },
   },
